@@ -1,10 +1,39 @@
 
 @charset "utf-8";
-
-// Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
-// Custom tiles
+// Set your brand colors
+$discordbkg: #292841;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$dark: $discordbkg;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Set your brand colors
+$discordbkg: #292841;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$dark: $discordbkg;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+
+@import "../node_modules/bulma/bulma.sass";
+
+
+
+
+body {
+    cursor: text;
+}
+
+p.title {
+    color: white;
+}
 
 .is-window-title {
     background-color: #1C1b29;
@@ -14,28 +43,24 @@
     justify-content: space-between;
 }
 
-
 .is-window-body {
     padding: 1rem 1.5rem 1rem 1.5rem;
     background-color: black;
     border-radius: 0px 0px 5px 5px;
 }
 
+// ID
+#first-screen {
+    background: linear-gradient(180deg,#db4646 1%, #292841 70%);
+}
 
+#second-screen {
+    filter: drop-shadow(0px -14px 10px #000000);
+}
 
-// Set your brand colors
-$hussard: #292841;
-
-// Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
-
-$dark: $hussard;
-
-$widescreen-enabled: false;
-$fullhd-enabled: false;
-
-// Update some of Bulma's component variables
-$body-background-color: $hussard;
-$control-border-width: 2px;
-
-@import "../node_modules/bulma/bulma.sass";
+#avatar {
+    filter: blur(5px);
+    &:hover {
+        filter: blur(0px); 
+    }
+}

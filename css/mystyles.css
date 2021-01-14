@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-.is-window-title {
-  background-color: #1C1b29;
-  border-radius: 5px 5px 0px 0px;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between; }
-
-.is-window-body {
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  background-color: black;
-  border-radius: 0px 0px 5px 5px; }
-
 /*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 @keyframes spinAround {
@@ -154,7 +142,7 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   border-radius: 4px;
   box-shadow: none;
   display: inline-flex;
@@ -162,10 +150,10 @@
   height: 2.5em;
   justify-content: flex-start;
   line-height: 1.5;
-  padding-bottom: calc(0.5em - 2px);
-  padding-left: calc(0.75em - 2px);
-  padding-right: calc(0.75em - 2px);
-  padding-top: calc(0.5em - 2px);
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
   position: relative;
   vertical-align: top; }
   .button:focus, .input:focus, .textarea:focus, .select select:focus, .file-cta:focus,
@@ -276,7 +264,7 @@ th {
     text-align: inherit; }
 
 html {
-  background-color: #292841;
+  background-color: white;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -403,14 +391,14 @@ a.box:active {
 .button {
   background-color: white;
   border-color: #dbdbdb;
-  border-width: 2px;
+  border-width: 1px;
   color: #363636;
   cursor: pointer;
   justify-content: center;
-  padding-bottom: calc(0.5em - 2px);
+  padding-bottom: calc(0.5em - 1px);
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: calc(0.5em - 2px);
+  padding-top: calc(0.5em - 1px);
   text-align: center;
   white-space: nowrap; }
   .button strong {
@@ -419,14 +407,14 @@ a.box:active {
     height: 1.5em;
     width: 1.5em; }
   .button .icon:first-child:not(:last-child) {
-    margin-left: calc(-0.5em - 2px);
+    margin-left: calc(-0.5em - 1px);
     margin-right: 0.25em; }
   .button .icon:last-child:not(:first-child) {
     margin-left: 0.25em;
-    margin-right: calc(-0.5em - 2px); }
+    margin-right: calc(-0.5em - 1px); }
   .button .icon:first-child:last-child {
-    margin-left: calc(-0.5em - 2px);
-    margin-right: calc(-0.5em - 2px); }
+    margin-left: calc(-0.5em - 1px);
+    margin-right: calc(-0.5em - 1px); }
   .button:hover, .button.is-hovered {
     border-color: #b5b5b5;
     color: #363636; }
@@ -2237,8 +2225,8 @@ a.tag:hover {
 
 .input.is-rounded {
   border-radius: 290486px;
-  padding-left: calc(calc(0.75em - 2px) + 0.375em);
-  padding-right: calc(calc(0.75em - 2px) + 0.375em); }
+  padding-left: calc(calc(0.75em - 1px) + 0.375em);
+  padding-right: calc(calc(0.75em - 1px) + 0.375em); }
 
 .input.is-static {
   background-color: transparent;
@@ -2251,7 +2239,7 @@ a.tag:hover {
   display: block;
   max-width: 100%;
   min-width: 100%;
-  padding: calc(0.75em - 2px);
+  padding: calc(0.75em - 1px);
   resize: vertical; }
   .textarea:not([rows]) {
     max-height: 40em;
@@ -7154,3 +7142,32 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+
+body {
+  cursor: text; }
+
+p.title {
+  color: white; }
+
+.is-window-title {
+  background-color: #1C1b29;
+  border-radius: 5px 5px 0px 0px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; }
+
+.is-window-body {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  background-color: black;
+  border-radius: 0px 0px 5px 5px; }
+
+#first-screen {
+  background: linear-gradient(180deg, #db4646 1%, #292841 70%); }
+
+#second-screen {
+  filter: drop-shadow(0px -14px 10px #000000); }
+
+#avatar {
+  filter: blur(5px); }
+  #avatar:hover {
+    filter: blur(0px); }
